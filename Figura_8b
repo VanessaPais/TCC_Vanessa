@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “Houve readaptação do sistema durante a implantação?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `3 - Houve readaptação do sistema durante a implantação?`,
@@ -7,3 +13,9 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_bw()
+  
+    dados <- read_excel("C:/Users/vanes/Desktop/Vanessa - TCC/coleta.xlsx",sheet = 1)
+
+esquisser(dados)
+
+```
