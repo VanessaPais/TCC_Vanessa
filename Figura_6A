@@ -14,6 +14,4 @@ dados <- read_excel("C:/Users/vanes/Desktop/Vanessa - TCC/coleta.xlsx",sheet = 1
 
 esquisser(dados)
 
-
-
 ```
