@@ -1,3 +1,5 @@
+\\Resultado da Estatística Descritiva para a afirmação se “Houve resistência dos profissionais de T.I na implantação do sistema?”
+
 ```{r}
 
 library(ggplot2)
