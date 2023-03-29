@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `1 - Houve resistência dos profissionais de T.I na implantação do sistema?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#2351A3") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
