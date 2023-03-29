@@ -1,0 +1,10 @@
+ggplot(dados) +
+  aes(
+    x = `7 - Houve problemas de integração com os sistemas nativos,
+    durante a implantação do sistema?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#2351A3") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
