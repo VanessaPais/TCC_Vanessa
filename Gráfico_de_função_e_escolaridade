@@ -1,0 +1,21 @@
+```{r}
+
+library(ggplot2)
+
+ggplot(dados) +
+ aes(x = `Qual sua função?`) +
+ geom_bar(fill = "#245BBC") +
+ labs(x = "Função", y = "Quantidade", 
+ title = "Gráfico de função e escolaridade") +
+ coord_flip() +
+ theme_minimal() +
+ theme(plot.title = element_text(size = 20L, 
+ face = "bold.italic", hjust = 0.5), axis.title.y = element_text(size = 12L, face = "bold"), axis.title.x = element_text(size = 12L, 
+ face = "bold")) +
+ facet_wrap(vars(`Qual seu nível de escolaridade?`), scales = "free", ncol = 1L)
+
+dados <- read_excel("C:/Users/vanes/Desktop/Vanessa - TCC/coleta.xlsx",sheet = 1)
+
+esquisser(dados)
+
+```
