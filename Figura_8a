@@ -2,6 +2,8 @@
 
 ```{r}
 
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `3 - Houve readaptação do sistema durante a implantação?`
