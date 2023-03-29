@@ -1,0 +1,21 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “A equipe de T.I conhecia e tinha domínio sobre o pacote implantado?”
+
+```{r}
+
+library(ggplot2)
+
+ggplot(dados) +
+  aes(
+    x = `2 - A equipe de T.I conhecia e tinha domínio sobre o pacote implantado?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#2351A3") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
+  
+    dados <- read_excel("C:/Users/vanes/Desktop/Vanessa - TCC/coleta.xlsx",sheet = 1)
+
+esquisser(dados)
+
+```
