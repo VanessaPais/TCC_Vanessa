@@ -1,0 +1,19 @@
+```{r}
+
+library(ggplot2)
+
+ggplot(dados) +
+ aes(x = `1 - Houve resistência dos profissionais de T.I na implantação do sistema?`) +
+ geom_histogram(bins = 27L, fill = "#2451A1") +
+ labs(x = ".", y = ".") +
+ coord_flip() +
+ theme_bw() +
+ facet_wrap(vars(`Qual sua função?`))
+
+dados <- read_excel("C:/Users/vanes/Desktop/Vanessa - TCC/coleta.xlsx",sheet = 1)
+
+esquisser(dados)
+
+
+
+```
