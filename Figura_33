@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `10 - Qual o nível de satisfação com o uso do sistema?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#1B4DA6") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
