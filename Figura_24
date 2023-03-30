@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `1 - Os treinamentos foram suficientes para ter domínio do sistema implantado?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#19428D") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
