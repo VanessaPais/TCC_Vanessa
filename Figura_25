@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `2 - Com a implantação do sistema foi possível minimizar o retrabalho / redundância das informações?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#1B4DA6") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
