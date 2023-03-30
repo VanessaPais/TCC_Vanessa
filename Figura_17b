@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `2 - A organização encontrou dificuldades na contratação em relação aos custos para obtenção de licença?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#2351A3") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
