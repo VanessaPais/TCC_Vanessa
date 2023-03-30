@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `5 - Com a implantação do sistema houve melhoria no controle interno dos processos administrativos?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#1B4DA6") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
