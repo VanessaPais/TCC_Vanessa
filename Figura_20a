@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `5 - A organização precisou promover treinamentos / Capacitação além do contratado no planejamento financeiro?`
+  ) +
+  geom_bar(fill = "#2351A3") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw() +
+  facet_wrap(vars(`Qual sua função?`))
