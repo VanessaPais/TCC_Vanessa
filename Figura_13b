@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `8 - Houve necessidade de realizar mapeamento dos processos de negócios organizacionais para a implantação?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#2351A3") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
