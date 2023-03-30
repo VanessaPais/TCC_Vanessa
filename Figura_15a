@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `10 - O processo de implantação do sistema ocorreu dentro dos prazos estipulados?`
+  ) +
+  geom_bar(fill = "#2351A3") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw() +
+  facet_wrap(vars(`Qual sua função?`))
