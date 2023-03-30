@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `4 - Levando em conta a implantação do sistema existiu maior integração das informações das áreas / setores?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#1B4DA6") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
