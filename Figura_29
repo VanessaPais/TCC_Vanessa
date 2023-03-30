@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `6 - A implantação do sistema trouxe melhoria da eficiência dos processos administrativos?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#1B4DA6") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
