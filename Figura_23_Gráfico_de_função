@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `Qual sua função?`,
+    group = `Qual é seu nível de escolaridade?`
+  ) +
+  geom_bar(fill = "#285EBF") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
