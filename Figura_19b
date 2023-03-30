@@ -1,0 +1,9 @@
+ggplot(dados) +
+  aes(
+    x = `4 - Houve necessidade de realizar novas consultorias externas que não estava prevista no planejamento financeiro?`,
+    group = `Qual sua função?`
+  ) +
+  geom_histogram(bins = 10L, fill = "#2351A3") +
+  labs(x = ".", y = ".") +
+  coord_flip() +
+  theme_bw()
