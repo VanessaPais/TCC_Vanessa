@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “Com a implantação do sistema houve melhoria no controle interno dos processos administrativos?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `5 - Com a implantação do sistema houve melhoria no controle interno dos processos administrativos?`,
@@ -7,3 +13,7 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_bw()
+
+esquisser(dados)
+
+```
