@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “A implantação do sistema trouxe melhoria da eficiência dos processos administrativos?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `6 - A implantação do sistema trouxe melhoria da eficiência dos processos administrativos?`,
@@ -7,3 +13,7 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_bw()
+  
+  esquisser(dados)
+
+```
