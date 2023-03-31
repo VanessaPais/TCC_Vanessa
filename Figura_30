@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “O processo de implantação do sistema melhorou o planejamento da organização?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `7 - O processo de implantação do sistema melhorou o planejamento da organização?`,
@@ -7,3 +13,7 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_bw()
+
+esquisser(dados)
+
+```
