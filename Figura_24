@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “Os treinamentos foram suficientes para ter domínio do sistema implantado?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `1 - Os treinamentos foram suficientes para ter domínio do sistema implantado?`,
@@ -7,3 +13,7 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_bw()
+  
+esquisser(dados)
+
+```
