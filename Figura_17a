@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “A organização encontrou dificuldades na contratação em relação aos custos para obtenção de licença?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `2 - A organização encontrou dificuldades na contratação em relação aos custos para obtenção de licença?`
@@ -7,3 +13,7 @@ ggplot(dados) +
   coord_flip() +
   theme_bw() +
   facet_wrap(vars(`Qual sua função?`))
+  
+esquisser(dados)
+
+```
