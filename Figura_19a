@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “Houve necessidade de realizar novas consultorias externas que não estava prevista no planejamento financeiro?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `4 - Houve necessidade de realizar novas consultorias externas que não estava prevista no planejamento financeiro?`
@@ -7,3 +13,7 @@ ggplot(dados) +
   coord_flip() +
   theme_bw() +
   facet_wrap(vars(`Qual sua função?`))
+  
+  esquisser(dados)
+
+```
