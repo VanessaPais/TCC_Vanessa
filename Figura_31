@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se ”A implantação do sistema gerou aumento na produtividade?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `8 - A implantação do sistema promoveu facilidades nos trabalhos rotineiros?`,
@@ -7,3 +13,7 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_bw()
+
+esquisser(dados)
+
+```
