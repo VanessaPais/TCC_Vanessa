@@ -1,3 +1,9 @@
+\\ Escolaridade dos usuários
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `Qual é seu nível de escolaridade?`,
@@ -7,3 +13,7 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_bw()
+  
+  esquisser(dados)
+
+```
