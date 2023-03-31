@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “Houve problemas de integração com os sistemas nativos, durante a implantação do sistema?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `7 - Houve problemas de integração com os sistemas nativos,
@@ -8,3 +14,7 @@ ggplot(dados) +
   coord_flip() +
   theme_bw() +
   facet_wrap(vars(`Qual sua função?`))
+  
+esquisser(dados)
+
+```
