@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “Levando em conta a implantação do sistema existiu maior integração das informações das áreas / setores?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `4 - Levando em conta a implantação do sistema existiu maior integração das informações das áreas / setores?`,
@@ -7,3 +13,7 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_bw()
+  
+esquisser(dados)
+
+```
