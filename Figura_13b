@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “Houve necessidade de realizar mapeamento dos processos de negócios organizacionais para a implantação?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `8 - Houve necessidade de realizar mapeamento dos processos de negócios organizacionais para a implantação?`,
@@ -7,3 +13,8 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_bw()
+  
+  
+esquisser(dados)
+
+```
