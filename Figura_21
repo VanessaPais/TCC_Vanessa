@@ -1,3 +1,9 @@
+\\ Resultado da Estatística Descritiva para a afirmação se “Quais destes problemas impactou durante a implantação do sistema?”
+
+```{r}
+
+library(ggplot2)
+
 ggplot(dados) +
   aes(
     x = `Quais destes problemas impactou durante a implantação do sistema ERP`,
@@ -7,3 +13,7 @@ ggplot(dados) +
   labs(x = ".", y = ".") +
   coord_flip() +
   theme_minimal()
+  
+  esquisser(dados)
+
+```
